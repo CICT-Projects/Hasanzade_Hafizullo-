@@ -19,9 +19,9 @@ var summaries = new[]
     "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
 };
 
-app.MapGet("git brancht", () =>
+app.MapGet("git checkout -b", () =>
 {
-    return "показать список веток.";
+    return "создать и сразу переключиться.";
 })
 .WithName("GetWeatherForecast");
 
