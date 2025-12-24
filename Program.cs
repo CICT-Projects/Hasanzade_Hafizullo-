@@ -19,9 +19,9 @@ var summaries = new[]
     "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
 };
 
-app.MapGet("git push", () =>
+app.MapGet("git commit", () =>
 {
-    return "используется для отправки ваших локальных изменений - коммитов";
+    return "фиксирует (сохраняет) изменения, подготовленные с помощью git add.";
 })
 .WithName("GetWeatherForecast");
 
